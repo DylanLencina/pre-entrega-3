@@ -1,0 +1,19 @@
+nav{
+    background-color:map-get($color , lila ) ;
+    div{
+        width: 6.25rem;
+        img{
+            width: 6.25rem;
+            height: 6.25rem;
+        }
+    }
+    li{
+        display: inline-block;
+        padding: 0 1.25rem;
+        a{
+            font-size: map-get($size , long );
+            color: black;
+            text-decoration: none;
+        }
+    }
+}

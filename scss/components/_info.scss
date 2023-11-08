@@ -1,0 +1,12 @@
+.info-contenedor{
+    width: 100%;
+    @include flex (row, nowrap, space-around, none);
+    section{
+        background-color: rgba(240, 248, 255, 0.507);
+        width: 21.875rem;
+        height: 12.5rem;
+        margin: 2.5rem;
+        box-shadow: 2px 2px 5px grey;
+        text-align: center;
+    }
+}

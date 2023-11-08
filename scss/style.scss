@@ -2,310 +2,39 @@
 @import "./base/reset";
 @import "./base/typo";
 @import "./utilities/mixins";
-nav{
-    background-color:map-get($color , lila ) ;
-    div{
-        width: 6.25rem;
-        img{
-            width: 6.25rem;
-            height: 6.25rem;
-        }
-    }
-    li{
-        display: inline-block;
-        padding: 0 1.25rem;
-        a{
-            font-size: map-get($size , long );
-            color: black;
-            text-decoration: none;
-        }
-    }
-}
+@import "./layout/nav";
 @import "../scss/layout/footer";
-
 // main index
-.main-index{
-    background-color: map-get($color, lila );
-}
-.section-principal{
-    display: flex;
-    flex-direction: row-reverse;
-    font-size: 1.5625rem;
-    width: 100%;
-    height: 21.875rem;
-    background-color: map-get($color , cian );
-    padding: 1.25rem;
-    div{
-        
-        h1, p{
-            text-align: justify;
-            font-size: map-get($size , long );
-        }
-        button{
-            border-radius: 1.875rem;
-            border: map-get($color , cian );
-            box-shadow: map-get($color , violeta );
-            font-size: 1.5625rem;
-            background-color: map-get($color , lila );
-            margin: 20px 1.25rem;
-            padding: 1.25rem 1.875rem;
-            a{
-                color: black;
-                text-decoration: none;
-            }
-        }
-    }
-}
-.section-principal-imagenes{
-    display: flex;
-    flex-flow: row-reverse;
-    width: 100%;
-    height: 15.625rem;
-    margin: 1.25rem 1.25rem;
-    img{
-        width: 100%;
-        height: 100%;
-    }
-}
-.index-banner{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    padding: 1.25rem;
-    div{
-        width: 18.75rem;
-        height: 18.75rem;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-.index-nosotros, .info-logo{
-    width: 100%;
-    height:21.875rem;
-    @include flex (row,nowrap, space-around,none);
-    background-color: #25264081;
-    text-align: left;
-    margin: .625rem .625rem ;
-    section:nth-child(1){
-        h2{
-            font-size: map-get($size, long );
-        }p{
-            font-size: map-get($size , small );
-        }
-    }
-}
-// cards
-body {
-    color: #272727;
-    font-family: 'Quicksand', serif;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 0;
-}
-
+@import"./layout/index";
+@import"./layout/body";
 @import"../scss/components/card";
-.info-contenedor{
-    width: 100%;
-    @include flex (row, nowrap, space-around, none);
-    section{
-        background-color: rgba(240, 248, 255, 0.507);
-        width: 21.875rem;
-        height: 12.5rem;
-        margin: 2.5rem;
-        box-shadow: 2px 2px 5px grey;
-        text-align: center;
-    }
-}
+@import "./components/info";
 //ayuda html
-.main-ayuda{
-    background-color: map-get($color , lila );
-}
-.ayuda-ubicaciones{
-    h1{
-    text-align: center;
-    font-size: map-get($size , long );
-    }
-    div{
-        @include flex(row,wrap,space-around, center);
-        gap: 10px;
-        width: 100%;
-        height: 40%;
-        background-color: #21374b96;
-        iframe{
-            margin: 1.25rem 1.25rem;
-            padding: 20px;
-        }
-    }
-}
-.ayuda-banner{
-    width: 100%;
-    height: 100%;
-    img{
-        width: 100%;
-        height: 31.25rem;
-        padding: 1.25rem;
-    }
-}
+@import"./layout/ayuda";
 // contactanos html
-.main-contactanos{
+@import"./layout/contactanos";
+// productos html
+@import"./layout/productos";
+// carrito html
+@import"./layout/carrito";
+// 404
+.main404{
+    height: 800px;
+    width: 100%;
     background-color: map-get($color , cian );
 }
-.contenedor-form{
-    @include flex(row, nowrap, center, center);
-    div:nth-child(1){
-        h1{
-            font-size: map-get($size , long );
-        }
-    }div:nth-child(2){
-        form{
-            padding: 3.125rem 3.4375rem;
-            box-shadow: 0 0 1.25rem black;
-            border-radius: 1.25rem;
-            align-items: center;
-            width: 37.5rem;
-            background-color: map-get($color , lila );
-            div:nth-child(1){
-                @include flex(column, nowrap, none, none);
-                text-align: left;
-                label{
-                    height: .9375rem;
-                    color: #000;
-                    font-weight: 600;
-                    margin-bottom: 1.25rem;
-                }textarea{
-                    padding: 1.0625rem 1.5625rem;
-                    border-radius: 1.5625rem;
-                    margin-bottom: 1.25rem;
-                    background-color: #62a2d975;
-                    border: .125rem solid ;
-                }
-            }div:nth-child(2){
-                margin-bottom: 1.875rem;
-                @include flex(column, nowrap,space-between, none);
-                text-align: center;
-                a{
-                    color: #252640;
-                    font-size: .875rem;
-                    font-weight: 600;
-                    text-decoration: none;
-                }
-            }input{
-                font-size: 1rem;
-                color: black;
-                border: 0;
-                border-radius: 1.5625rem;
-                background-color:#62a2d975;
-                box-shadow: 0 0 1.25rem #62a2d956;
-                @extend textarea;
-            }button{
-                border: .125rem solid;
-                padding: 1.875rem;
-                @extend input;
-            }
-        }
-    }
-}
-@media (min-width: 40rem){
-    .cards-item {
-    width: 50%;
-    }
-}
-
-@media (min-width: 56rem) {
-    .cards-item {
-    width: 33.3333%;
-    }
-}
-// productos html
-.main-productos{
-    background-color: map-get($color , vio-oscuro);
-}
-
-// carrito html
-.carrito-main{
-    background-color: map-get($color , rosa );
-}
-.carrito-container{
-    @include flex(row,wrap,center, none);
+.cartel404{
+    @include flex(column, wrap,space-around, center);
     width: 100%;
-    background: linear-gradient(to bottom left, #62A1D9 60%, #7F6DF2 100%);
-    section{
-        margin: 1.25rem;
-        padding: 1rem;
-        background: linear-gradient(to bottom left, #252640 40%, #7F6DF2 100%);
-        background-color: #25264093;
-        width:100%;
-        height: 12.5rem;
-        @include flex(row,wrap,space-around, none);
-        div:nth-child(1){
-            width: 9.375rem;
-            img{
-                width: 100%;
-                height: 80%;
-            }
-        }:nth-child(2){
-            @include flex(column,nowrap,space-around,left);
-            h1{
-                color: white;
-                font-size: map-get($color , long );
-            }h2{
-                color: white;
-                font-size: map-get($color, small );
-            }
-        }:nth-child(3){
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            button{
-                @extend input;
-                img{
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    color: black;
-                    text-decoration: none;
-                }
-            }input{
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-        }
-    }article{
-        display: flex;
-        flex-direction: row;
-        button{
-        color: #ffffff;
-            padding: 0.8rem;
-            font-size: 14px;
-            text-transform: uppercase;
-            border-radius: 4px;
-            font-weight: 400;
-            display: block;
-            width: 100%;
-            cursor: pointer;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: transparent;
-        }
+    height: 25rem;
+    h1{
+        font-size: map-get($size , long );
     }
 }
-
-.carrito-banner{
-    width:100%;
-    @include flex(row,wrap,center, none);
-    div{
-        width:400px;
-        margin: 1.25rem;
-        img{
-            width: 100%;
-            height: 100%;
-            margin: 1.25rem
-        }
-    }:nth-child(2){
-        width: 80%
-    }
-}
+@import"./layout/error404";
 // responsive 
 @import"../scss/layout/media/media768";
 @import"../scss/layout/media/media425";
 @import"../scss/layout/media/media320";
+@import"./layout/media/media640";
+@import"./layout/media/media869";

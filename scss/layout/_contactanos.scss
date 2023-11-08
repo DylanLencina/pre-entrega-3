@@ -1,0 +1,58 @@
+.main-contactanos{
+    background-color: map-get($color , cian );
+}
+.contenedor-form{
+    @include flex(row, nowrap, center, center);
+    div:nth-child(1){
+        h1{
+            font-size: map-get($size , long );
+        }
+    }div:nth-child(2){
+        form{
+            padding: 3.125rem 3.4375rem;
+            box-shadow: 0 0 1.25rem black;
+            border-radius: 1.25rem;
+            align-items: center;
+            width: 37.5rem;
+            background-color: map-get($color , lila );
+            div:nth-child(1){
+                @include flex(column, nowrap, none, none);
+                text-align: left;
+                label{
+                    height: .9375rem;
+                    color: #000;
+                    font-weight: 600;
+                    margin-bottom: 1.25rem;
+                }textarea{
+                    padding: 1.0625rem 1.5625rem;
+                    border-radius: 1.5625rem;
+                    margin-bottom: 1.25rem;
+                    background-color: #62a2d975;
+                    border: .125rem solid ;
+                }
+            }div:nth-child(2){
+                margin-bottom: 1.875rem;
+                @include flex(column, nowrap,space-between, none);
+                text-align: center;
+                a{
+                    color: #252640;
+                    font-size: .875rem;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }input{
+                font-size: 1rem;
+                color: black;
+                border: 0;
+                border-radius: 1.5625rem;
+                background-color:#62a2d975;
+                box-shadow: 0 0 1.25rem #62a2d956;
+                @extend textarea;
+            }button{
+                border: .125rem solid;
+                padding: 1.875rem;
+                @extend input;
+            }
+        }
+    }
+}

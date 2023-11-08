@@ -1,0 +1,29 @@
+.main-ayuda{
+    background-color: map-get($color , lila );
+}
+.ayuda-ubicaciones{
+    h1{
+    text-align: center;
+    font-size: map-get($size , long );
+    }
+    div{
+        @include flex(row,wrap,space-around, center);
+        gap: 10px;
+        width: 100%;
+        height: 40%;
+        background-color: #21374b96;
+        iframe{
+            margin: 1.25rem 1.25rem;
+            padding: 20px;
+        }
+    }
+}
+.ayuda-banner{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        height: 31.25rem;
+        padding: 1.25rem;
+    }
+}
