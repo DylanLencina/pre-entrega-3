@@ -1,0 +1,40 @@
+
+.cartel404{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #7f6df27e  ;
+    div{
+        @include flex(column,wrap,none,center);
+        padding: 2rem 8%;
+        :nth-child(1){
+            h1{
+                font-size: map-get($size , long);
+            }
+        }:nth-child(2){
+            p{
+                font-size: map-get($size , small );
+            }
+        }:nth-child(3){
+            p{
+                font-size: map-get($size , long );
+                padding-bottom: .625rem;
+            }button{
+                color: #ffffff;
+            padding: 0.8rem;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            font-weight: 400;
+            display: block;
+            cursor: pointer;
+            border: 1px solid black;
+            background: transparent;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            }
+        }
+    }
+}

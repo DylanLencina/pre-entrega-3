@@ -10,7 +10,7 @@
 @import"../scss/components/card";
 @import "./components/info";
 //ayuda html
-@import"./layout/ayuda";
+@import"./layout/sucursales";
 // contactanos html
 @import"./layout/contactanos";
 // productos html
@@ -18,19 +18,6 @@
 // carrito html
 @import"./layout/carrito";
 // 404
-.main404{
-    height: 800px;
-    width: 100%;
-    background-color: map-get($color , cian );
-}
-.cartel404{
-    @include flex(column, wrap,space-around, center);
-    width: 100%;
-    height: 25rem;
-    h1{
-        font-size: map-get($size , long );
-    }
-}
 @import"./layout/error404";
 // responsive 
 @import"../scss/layout/media/media768";
