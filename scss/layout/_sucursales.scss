@@ -1,29 +1,87 @@
-.main-ayuda{
+.main-sucursales{
     background-color: map-get($color , lila );
 }
-.ayuda-ubicaciones{
+.sucursales-ubicaciones{
     h1{
+    color: black;
     text-align: center;
     font-size: map-get($size , long );
     }
-    div{
-        @include flex(row,wrap,space-around, center);
-        gap: 10px;
-        width: 100%;
-        height: 40%;
-        background-color: #21374b96;
-        iframe{
-            margin: 1.25rem 1.25rem;
-            padding: 20px;
-        }
-    }
 }
-.ayuda-banner{
+.sucursales-banner{
     width: 100%;
     height: 100%;
     img{
         width: 100%;
         height: 31.25rem;
         padding: 1.25rem;
+    }
+}
+.iframe-contenedor{
+    background-color: #352f59ab;
+    max-width: 1200px;
+    margin: 0 auto;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+.cards-iframe{
+    display: flex;
+    padding: 1rem;
+    div{
+        border-radius: 0.25rem;
+        box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+        padding: 1rem;
+        &:nth-child(1){
+            iframe{
+                height: 12.5rem;
+                max-width: 100%;
+                vertical-align: middle;
+                object-fit: cover;
+            }
+        }&:nth-child(2){
+            padding: 1rem;
+            background: linear-gradient(to bottom left, #b86ad9da 40%, #7F6DF2 100%);
+            h2{
+                color: black;
+                font-size: 1.1rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: capitalize;
+                margin: 0px;
+            }p{
+                color: black;
+                font-size: 0.875rem;
+                line-height: 1.5;
+                margin-bottom: 1.25rem;    
+                font-weight: 400;
+            }button{
+                color: #ffffff;
+                padding: 0.8rem;
+                font-size: 14px;
+                text-transform: uppercase;
+                border-radius: 4px;
+                font-weight: 400;
+                display: block;
+                width: 100%;
+                cursor: pointer;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                background: transparent;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
     }
 }

@@ -1,5 +1,5 @@
 nav{
-    background-color:map-get($color , lila ) ;
+    background-color:map-get($color , cian) ;
     div{
         width: 6.25rem;
         img{
@@ -12,7 +12,7 @@ nav{
         padding: 0 1.25rem;
         a{
             font-size: map-get($size , long );
-            color: black;
+            color: white;
             text-decoration: none;
         }
     }

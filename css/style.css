@@ -6,7 +6,7 @@
   font-family: 'DM Sans', sans-serif; }
 
 nav {
-  background-color: #7F6DF2; }
+  background-color: #62A1D9; }
   nav div {
     width: 6.25rem; }
     nav div img {
@@ -17,7 +17,7 @@ nav {
     padding: 0 1.25rem; }
     nav li a {
       font-size: 1.875rem;
-      color: black;
+      color: white;
       text-decoration: none; }
 
 footer {
@@ -76,7 +76,7 @@ footer {
   font-size: 1.5625rem;
   width: 100%;
   height: 21.875rem;
-  background-color: #62A1D9;
+  background-color: #352f593d;
   padding: 1.25rem; }
   .section-principal div h1, .section-principal div p {
     text-align: justify;
@@ -123,12 +123,16 @@ footer {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: none;
-  background-color: #25264081;
+  background-color: #2526402f;
   text-align: left;
   margin: .625rem .625rem; }
   .index-nosotros section:nth-child(1) h2, .info-logo section:nth-child(1) h2 {
-    font-size: 1.875rem; }
+    font-size: 1.875rem;
+    color: black;
+    padding: 0%; }
   .index-nosotros section:nth-child(1) p, .info-logo section:nth-child(1) p {
+    color: black;
+    padding: 0%;
     font-size: 1.25rem; }
 
 body {
@@ -138,10 +142,10 @@ body {
   font-weight: 400;
   letter-spacing: 0; }
 
-.card-contendor {
+.card-contenedor {
   max-width: 1200px;
   margin: 0 auto; }
-  .card-contendor ul {
+  .card-contenedor ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -211,34 +215,82 @@ body {
     box-shadow: 2px 2px 5px grey;
     text-align: center; }
 
-.main-ayuda {
+.main-sucursales {
   background-color: #7F6DF2; }
 
-.ayuda-ubicaciones h1 {
+.sucursales-ubicaciones h1 {
+  color: black;
   text-align: center;
   font-size: 1.875rem; }
 
-.ayuda-ubicaciones div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  height: 40%;
-  background-color: #21374b96; }
-  .ayuda-ubicaciones div iframe {
-    margin: 1.25rem 1.25rem;
-    padding: 20px; }
-
-.ayuda-banner {
+.sucursales-banner {
   width: 100%;
   height: 100%; }
-  .ayuda-banner img {
+  .sucursales-banner img {
     width: 100%;
     height: 31.25rem;
     padding: 1.25rem; }
+
+.iframe-contenedor {
+  background-color: #352f59ab;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .iframe-contenedor ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+
+.cards-iframe {
+  display: flex;
+  padding: 1rem; }
+  .cards-iframe div {
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    padding: 1rem; }
+    .cards-iframe div:nth-child(1) iframe {
+      height: 12.5rem;
+      max-width: 100%;
+      vertical-align: middle;
+      object-fit: cover; }
+    .cards-iframe div:nth-child(2) {
+      padding: 1rem;
+      background: linear-gradient(to bottom left, #b86ad9da 40%, #7F6DF2 100%); }
+      .cards-iframe div:nth-child(2) h2 {
+        color: black;
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 0px; }
+      .cards-iframe div:nth-child(2) p {
+        color: black;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;
+        font-weight: 400; }
+      .cards-iframe div:nth-child(2) button {
+        color: #ffffff;
+        padding: 0.8rem;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: transparent; }
+        .cards-iframe div:nth-child(2) button a {
+          text-decoration: none;
+          color: white; }
 
 .main-contactanos {
   background-color: #62A1D9; }
@@ -367,7 +419,7 @@ body {
       width: 100%;
       cursor: pointer;
       border: 1px solid rgba(255, 255, 255, 0.2);
-      background: transparent; }
+      background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.445) 40%, #7f6df26e 100%); }
     .carrito-container article a {
       text-decoration: none;
       color: #252640; }
@@ -497,10 +549,10 @@ body {
           font-size: .875rem;
           font-weight: 600;
           text-decoration: none; }
-  .ayuda-banner {
+  .sucursales-banner {
     width: 100%;
     margin: .625rem; }
-    .ayuda-banner div img {
+    .sucursales-banner div img {
       width: 100%;
       height: 100%; } }
 
