@@ -1,0 +1,61 @@
+@media (max-width:1024px) {
+.section-principal{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    height: 21.875rem;
+    background-color: #352f593d;
+    padding: 1.25rem;
+    div:nth-child(1){
+        padding: .625rem;
+        h1, p{
+            text-align: justify;
+            font-size: map-get($size , small );
+        }
+        button{
+            border-radius: 1.875rem;
+            border: map-get($color , cian );
+            box-shadow: map-get($color , violeta );
+            font-size: 1.5625rem;
+            background-color: map-get($color , lila );
+            margin: 20px 1.25rem;
+            padding: 1.25rem 1.25rem;
+            a{
+                font-size: map-get($size , small );
+                color: black;
+                text-decoration: none;
+            }
+        }
+    }:nth-child(2){
+        @include flex(row, nowrap, center, none);
+        max-width: 100%;
+        height: 15.625rem;
+        img{
+            width: 100%;
+        }
+    }
+}
+.index-nosotros, .info-logo{
+    width: 100%;
+    height:21.875rem;
+    @include flex (row,nowrap, space-around,none);
+    background-color: #2526402f;
+    text-align: left;
+    margin: .625rem .625rem ;
+    section{
+        margin: 10px;
+    }
+    section:nth-child(1){
+        margin: .625rem;
+        h2{
+            font-size: map-get($size, long );
+            color: black;
+            padding: 0%;
+        }p{
+            color: black;
+            padding: 0%;
+            font-size: map-get($size , small );
+        }
+    }
+}
+}

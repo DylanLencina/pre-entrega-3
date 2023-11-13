@@ -1,4 +1,79 @@
 @media (max-width:320px){
+.section-principal{
+    width: 100%;
+    height:600px;
+    @include flex (row, wrap, none,none);
+    background-color: #2526402f;
+    text-align: left;
+    div:nth-child(1){
+        width:100%;
+        height: 200px;
+        padding: 1rem;
+        h1, p{
+            text-align: justify;
+            font-size: map-get($size , litle );
+        }
+        button{
+            border-radius: 1.875rem;
+            border: map-get($color , cian );
+            box-shadow: map-get($color , violeta );
+            font-size: 1.5625rem;
+            background-color: map-get($color , lila );
+            a{
+                font-size: map-get($size , small );
+            color: black;
+                text-decoration: none;
+            }
+        }
+    }div:nth-child(2){
+        width:100%;
+        height: 25rem;
+        @include flex (row,wrap, none,center);
+        text-align: left;
+        padding: 1.25rem;
+        object-fit: cover;
+        img{
+            width: 7.5rem;
+            height: 9.375rem;
+        }
+    }
+}
+
+    .index-nosotros{
+        width: 100%;
+        height:500px;
+        @include flex (row, wrap, space-around,none);
+        background-color: #2526402f;
+        text-align: left;
+        margin: .625rem .625rem ;
+        section{
+            width: 100%;
+            h2{
+                font-size: map-get($size, small );
+                color: black;
+                padding: 0%;
+            }p{
+                color: black;
+                padding: 0%;
+                font-size: map-get($size , litle );
+            }
+        }section:nth-child(2){
+            width:100%;
+            height: 18.75rem;
+            @include flex (row,nowrap, center,center);
+            background-color: #2526402f;
+            text-align: left;
+            padding: 1.25rem;
+            object-fit: cover;
+            img{
+                width: 12.5rem;
+                height: 12.5rem;
+            }
+        }
+    }
+
+
+
     .info-contenedor{
         width: 100%;
         display: flex;
