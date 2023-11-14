@@ -355,6 +355,13 @@ body {
     .contenedor-form div:nth-child(2) form button {
       border: .125rem solid;
       padding: 1.875rem; }
+  .contenedor-form .contactanos-banner {
+    width: 100%;
+    height: 100%; }
+    .contenedor-form .contactanos-banner img {
+      width: 100%;
+      height: 31.25rem;
+      padding: 1.25rem; }
 
 .main-productos {
   background-color: #252640; }
@@ -589,7 +596,14 @@ body {
       object-fit: cover; }
       .section-principal div:nth-child(2) img {
         width: 110px;
-        height: 12.5rem; } }
+        height: 12.5rem; }
+  .contactanos-banner {
+    width: 100%;
+    height: 100%; }
+    .contactanos-banner img {
+      width: 100%;
+      height: 18.75rem;
+      padding: 1.25rem; } }
 
 @media (max-width: 425px) {
   .section-principal {
@@ -741,13 +755,16 @@ body {
           color: #252640;
           font-size: .875rem;
           font-weight: 600;
-          text-decoration: none; }
-  .sucursales-banner {
+          text-decoration: none; } }
+
+.contactanos-banner {
+  width: 100%;
+  height: 100%; }
+  .contactanos-banner img {
     width: 100%;
-    margin: .625rem; }
-    .sucursales-banner div img {
-      width: 100%;
-      height: 100%; } }
+    height: 100%;
+    padding: 1.25rem;
+    object-fit: contain; }
 
 .carrito-container {
   display: flex;
