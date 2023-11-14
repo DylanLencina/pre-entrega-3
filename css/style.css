@@ -371,6 +371,7 @@ body {
   width: 100%;
   background: linear-gradient(to bottom left, #62A1D9 60%, #7F6DF2 100%); }
   .carrito-container section {
+    max-width: 75rem;
     margin: 1.25rem;
     padding: 1rem;
     background: linear-gradient(to bottom left, #252640 40%, #7F6DF2 100%);
@@ -378,12 +379,13 @@ body {
     width: 100%;
     height: 12.5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: none; }
     .carrito-container section div:nth-child(1) {
-      width: 9.375rem; }
+      width: 15.625rem;
+      height: 18.75rem; }
       .carrito-container section div:nth-child(1) img {
         width: 100%;
         height: 80%; }
@@ -437,11 +439,11 @@ body {
   align-items: none; }
   .carrito-banner div {
     width: 400px;
-    margin: 1.25rem; }
+    margin: 1.25rem;
+    padding: .625rem; }
     .carrito-banner div img {
       width: 100%;
-      height: 100%;
-      margin: 1.25rem; }
+      height: 100%; }
   .carrito-banner :nth-child(2) {
     width: 80%; }
 
@@ -474,7 +476,7 @@ body {
       display: block;
       cursor: pointer;
       border: 1px solid black;
-      background: transparent; }
+      background: #352f595b; }
       .cartel404 div :nth-child(3) button a {
         text-decoration: none;
         color: black; }
@@ -746,6 +748,74 @@ body {
     .sucursales-banner div img {
       width: 100%;
       height: 100%; } }
+
+.carrito-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  width: 100%;
+  background: linear-gradient(to bottom left, #62A1D9 60%, #7F6DF2 100%); }
+  .carrito-container section {
+    max-width: 75rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #252640 40%, #7F6DF2 100%);
+    background-color: #25264093;
+    width: 100%;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: none; }
+    .carrito-container section div:nth-child(1) {
+      width: 6.25rem;
+      height: 9.375rem; }
+      .carrito-container section div:nth-child(1) img {
+        width: 100%;
+        height: 80%; }
+    .carrito-container section :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: left; }
+      .carrito-container section :nth-child(2) h1 {
+        color: white; }
+      .carrito-container section :nth-child(2) h2 {
+        color: white; }
+    .carrito-container section :nth-child(3) {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .carrito-container section :nth-child(3) button img {
+        width: 2.5rem;
+        height: 2.5rem;
+        color: black;
+        text-decoration: none; }
+      .carrito-container section :nth-child(3) input, .carrito-container section :nth-child(3) .contenedor-form div:nth-child(2) form button, .contenedor-form div:nth-child(2) form .carrito-container section :nth-child(3) button, .carrito-container section :nth-child(3) button {
+        width: 2.5rem;
+        height: 2.5rem; }
+  .carrito-container article {
+    display: flex;
+    flex-direction: row; }
+    .carrito-container article button {
+      color: #ffffff;
+      padding: 0.8rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.445) 40%, #7f6df26e 100%); }
+    .carrito-container article a {
+      text-decoration: none;
+      color: #252640; }
 
 @media (max-width: 320px) {
   .section-principal {

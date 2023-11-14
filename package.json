@@ -197,5 +197,5 @@
     "yargs": "^17.7.2",
     "yargs-parser": "^20.2.9"
   },
-  "description": ""
+  "description": "<p>\r Proyecto orientado en el desarrollo y maquetacion de una tienda virtual de ropa urbana asiatica, responsive con repositorios generados con Git y Github.\r </p>"
 }
